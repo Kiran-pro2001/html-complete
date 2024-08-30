@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        img{
+            border-radius: 5%;
+        }
+        footer p{
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            padding: 30px;
+            font-size: 20px;
+        }
+        @media (width > 1300){
+            img{
+                width: 100%;
+            }
+        }
+        @media ( 900 < width < 1300){
+            tr{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+        /* @media (width < 900px){
+        img{
+            width: 100%;
+        }
+        tbody{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+    } */
+
+    /* Animations  */
+    img:hover{
+        transform: scale(1.04);
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Beautiful Places of India</h1>
+    <table align="center" cellspacing="20" cellpadding="0">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="https://imgs.search.brave.com/E0xCFGr7ymnkBOQPvfa2GABqa9gtVVQIKciyxU415ME/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MDEvMDUwOTA0MTgv/U2FybW9saS5qcGc" alt="Image 1" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/PZtNHmLTWsmOQl8SO-oQpQeJ875SkFDUj7-T1SFFToQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vVzl2M1Vy/c2RQdXc0WlhiMjVP/TEtNVFFBTDkzMWpt/SUpSM0p5WDIwZ1dz/RS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/Yldkei9Mbk5sWVhK/amFDNWljbUYyL1pT/NWpiMjB2YTNZMFN6/aEcvTTNJM1JrNU1P/VlZpTjA1RC9UMUpE/V2trMVRYSlRVMjV3/L1JHMXBlbWxHTUhR/eVZWODIvYnk5eWN6/cG1hWFE2TlRZdy9P/ak15TURveE9qQXZa/enBqL1pTOWhTRkl3/WTBoTk5reDUvT1RO/a00yTjFMMkpZYkc1/aS9SemxwV1ZkNE1t/RlhWak12L1kwYzVj/R0p1VVhWWk1qbDAv/VEROa2R5OU1WMDUy/WW01Uy9iR0p1VVha/a1dFSnpMMkl5L1Jt/dGplVGg1VFVSSmVr/eDYvUVRRdlRIcEZl/VXhWTVhaai9NMUYw/VVcxV2FDOWtXRkp3/L1dtNVdjMHhXUW5O/WlYwNXMvTDJONU1Y/QmlhVEZLWW0xUy9j/RmxUTVRBdllua3hW/MkZZL1RuQmtRekZI/V1ZoRmRDOWgvVnpG/b1dqSlZkV0Z1UW00/LmpwZWc" alt="Image 2" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/Dk3IzM3h-VId9DBzhGdvKMEcePUK2mbDPmz4bq99v68/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZ2xvYmFs/Z3Jhc3Nob3BwZXIu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDExLzAxL1B1c2hr/YXIuanBnP3Jlc2l6/ZT04NDAsNTYwJnNz/bD0x" alt="Image 3"
+                    width="400px" height="250px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://imgs.search.brave.com/etHy-ltdhE5IxP8Or98RrFrULyekBzUFeRDQBwRezTY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWlncmF0aW5nbWlz/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDUvSmFp/cHVyLUJlYXV0aWZ1/bC1QbGFjZXMtaW4t/SW5kaWEtMi0xMDI0/eDY1NS5qcGc" alt="Image 4" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/vkJBGS2V411EfP6WvLNe07IKh8bB9nvORK8YwHby4_w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MDEvMDQxMzQ3NTYv/S3VtYXJha29tLTEu/anBn" alt="Image 5" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/-4BX_E09vVjHTIdRd-tc0Oq9g0tLBrRL4GM3RQ7NP-M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZWlo/NDN5bTUzd2lmLmNs/b3VkZnJvbnQubmV0/L2phaXNhbG1lci1y/YWphc3RoYW4taW5k/aWEtc2FuZC1kdW5l/cy1zaHV0dGVyc3Rv/Y2tfMTQ2ODQ0Mjcz/OC5qcGdfZDY3YzMz/MGYxNS5qcGc" alt="Image 6" width="400px" height="250px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://imgs.search.brave.com/a_dE4PUnfQlQ0i_7RoYxj7_ID9o4u_QPQjtn8jVdbck/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMDkva2FzaG1p/cl9zaHV0dGVyc3Rv/Y2tfMTIzNTU4MjUw/LU1lZGl1bS1lMTUw/NTEwOTA4MDYxMS5q/cGc" alt="Image 7" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/PTCvuFiRiyKAYbWltwM8KqcsxqexvewuhtHtuOGsrvA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudG9paW1nLmNv/bS9waG90by9tc2lk/LTEwNjYzODQzMCx3/aWR0aC05NixoZWln/aHQtNjUuY21z" alt="Image 8" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/qeDErM2_gKR2qbnr1-Ib1aiQFRwJTuQCM7qm9v9HlhQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDcvVmFsbGV5/LW9mLWZsb3dlcnMt/dXR0cmFraGFuZC5q/cGc" alt="Image 9" width="400px" height="250px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://imgs.search.brave.com/tBdArcbZgpGdEfL_ySoyFfpzfdtBQozy_AVRgm8LpcQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZ2xvYmFs/Z3Jhc3Nob3BwZXIu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDExLzAxL01vc3Qt/YmVhdXRpZnVsLXBs/YWNlcy10by12aXNp/dC1pbi1JbmRpYS5q/cGc_Zml0PTEwMjQs/NjY4JnNzbD0x" alt="Image 10" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/y2ebyfCCXKDkfiQZCYOXrSA72fpIm49_jqW2G4vFXr4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MDEvMDQxMzAxMDIv/SGVtaXMtTmF0aW9u/YWwtUGFyay1MYWRh/a2guanBn" alt="Image 11" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/9_7B5A9WIr69VCC7X_M-JJScVxKkgYU0ZMYaPLE7asM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dHJhdmVsdHJpYW5n/bGUuY29tL2Jsb2cv/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDYvTXVtYmFpLmpw/Zw" alt="Image 12" width="400px" height="250px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://imgs.search.brave.com/E6Ujx7Sw2-1-nJG9AOhwBzBwENJNKiJ6qxgmI6PAVVY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MDEvMDQxMzEwNDUv/S2FiaW5pLVJpdmVy/LS5qcGc" alt="Image 13" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/9Lab62qUFb4E_Ndl779AO_WWbfohICF9HcnLrEVMjGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBw/aWUtaW5oZWVscy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDIvcmFubi11/dHNhdi0yMDE3LTE4/LTIzMjU4NTZfMTI4/MC5qcGc" alt="Image 14" width="400px" height="250px">
+                </td>
+                <td>
+                    <img src="https://imgs.search.brave.com/_R_6gXuQ61G0qZ8NFocmHYXBLSL1omPa6LAB1YpJ4Ug/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMyLnRyaXBvdG8u/Y29tL21lZGlhL2Zp/bHRlci90c3QvaW1n/LzE1NTQ2L1RyaXBE/b2N1bWVudC8xNDU1/MDgzNDAzXzc4Nzg5/NjAxNV8yMmMyYWYy/MjkzX2IuanBnLndl/YnA" alt="Image 15" width="400px" height="250px">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <hr>
+
+    <footer>
+        <p>Copyright © 2024 Kiran Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form - Practice</title>
+  </head>
+  <body>
+      <form
+      action=""
+      style="border: 1px solid black; margin: 150px auto; max-width: 800px"
+      >
+      <h2 align="center">Form</h2>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name?"
+        required
+        autofocus
+      />
+      <br />
+      <br />
+
+      <label for="number">Phone Number</label>
+      <input
+        type="number"
+        name=""
+        id="number"
+        placeholder="Enter your number?"
+        maxlength="14"
+        value="91"
+        required
+      />
+
+      <!-- I want to create a input box -- only take number type & lenght should be 10 digits only .... How?-->
+       <!-- Because if only integer, I use number...since tel was a failure.....but stil, for number the maxlength will not work. -->
+      <br />
+      <br />
+
+      <label for="email">Email Id :</label>
+      <input
+        type="email"
+        name=""
+        id="email"
+        value="kk9840042@gmail.com"
+        placeholder="Enter your Email Id"
+        required
+        disabled
+      />
+      <br />
+      <br />
+
+      <label for="message">Tell me something about yourself?</label> <br />
+      <textarea name="" id="message" rows="15" cols="35" required readonly></textarea>
+      <br />
+      <br />
+
+      <label for="subject">Favourite Subject</label> <br> 
+      <input type="checkbox" name="" id="subject">Web Technology
+      <input type="checkbox" name="" id="subject">SQL
+      <input type="checkbox" name="" id="subject">Python <br> <br> 
+
+      <label for="">Gender</label> <br> <br> 
+      <input type="radio" name="gender" id=""> Male
+       <input type="radio" name="gender" id="">Female
+      <input type="radio" name="gender" id="">Others <br> <br> 
+
+      <label for="city">City</label>
+      <select name="" id="">
+        <option value="Bangalore">Bangalore</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Punjab">Punjab</option>
+      </select> <br> <br> 
+
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" /> <br />
+      <br />
+    </form>
+  </body>
+</html>

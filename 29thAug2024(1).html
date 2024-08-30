@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+  <!-- 19 input values -->
+    <!-- input - type =" "   
+
+     1. text
+     2. password
+     3. email
+     4. date
+     5. datetime
+     6. date time local
+     7. checkbox
+     8. radio
+     9. range
+     10. file
+     11. color
+     12. month
+     13. week
+     14. search
+     15. reset
+     16. submit
+     17. link
+     18. number
+     19. tel-->
+
+     <!-- <input type=""> -->
+
+     <form action="">
+        <input type="text"> <br>
+        <input type="password" name="" id=""> <br>
+        <input type="email" name="" id="">   <!--email format only--> <br>
+        <input type="date" name="" id="">  <!--DOB -  mm/dd/yyyy  (customized or use js if you want to chnage th format )--> <br>
+        <input type="datetime" name="" id="">  <!--It's a failure -- not working - take any value--> <br>
+        <input type="datetime-local" name="" id=""> <!--dd/mm/yyyy hours/minutes am/pm    - used to fetch the local time --> <br>
+
+        <!-- Important  -->
+         <!-- Multiple Selections you want - use checkbox  -->
+         <h3>Courses </h3>
+         <input type="checkbox" name="" id="html">  <!--give id-->
+         <label for="html">HTML</label>
+
+         <input type="checkbox" name="" id="css">
+         <label for="css">CSS</label>
+
+         <input type="checkbox" name="" id="js">
+         <label for="js">JavaScript</label>
+
+         <input type="checkbox" name="" id="python">
+         <label for="python">Python</label>
+
+         <input type="checkbox" name="" id="sql">
+         <label for="sql">SQL</label> <br>
+
+
+         <!-- Now if I want a circular options, and yes there I can select multiple options -->
+         <!-- Use radio  -->
+         <h3>Gender</h3>
+         <input type="radio" name="" id="male">
+         <label for="male">Male</label>
+
+         <input type="radio" name="" id="female">
+         <label for="female">Female</label>
+
+         <input type="radio" name="" id="others">
+         <label for="others">Others</label>
+
+
+
+         <!-- Gender - either one of it we need to select  
+          If you want either one or multiple selection (in circular format)-- use radio  -->
+        
+        <!-- Use name attribute - to select only one 
+         using for & id (label with input we connect ) 
+         using name attribute - only one we can select-->
+         
+
+          <h3>Gender</h3>  <!--Put same name, so that only one get selected --->
+          <input type="radio" id="male" name="gender">
+          <label for="male">Male</label>
+ 
+          <input type="radio" id="female" name="gender">
+          <label for="female">Female</label>
+ 
+          <input type="radio" id="others" name="gender">
+          <label for="others">Others</label> <br>
+
+
+        <input type="range" name="" id="">  <br> <!--flipkart - range your budget (using js -we can set the value)-->
+        <input type="file" name="" id="">  <!--Submit file--><br> <br>
+        <input type="color" name="" id=""> <br> 
+
+        <input type="month" name="" id=""> <!--In which month you joined  - mm/yyyy--> <br> <br>
+        <input type="week" name="" id=""> <br> <br>
+
+        <input type="search" name="" id=""> <!--when search, cross come. Using js we can make it functional-->
+
+        <!-- to make button -different way --> <br> <br>
+        <!-- <button>Submit</button> -->
+         <input type="submit" value="Submit">  <!--Automatically value come submit-->  
+         <input type="reset" value="Reset"> <!--clear the input box, not send to database -->
+
+         <input type="tel" name="" id="">  <!--Failure  - any take we want-->
+         <input type="number" name="" id="">  <!--Number & Exponential (e)  - not accept alphabets-->
+         <input type="url" name="" id=""> <!--Give proper URL, otherwise during submit it can get validation error-->
+
+
+     </form>
+    
+</body>
+</html>

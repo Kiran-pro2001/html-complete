@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Table</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        text-align: center;
+      }
+      #snake {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        /* color: white; */
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Time Table</h2>
+    <table
+      border="1"
+      cellspacing="0"
+      cellpadding="20"
+      align="center"
+      style="text-align: center"
+    >
+      <thead>
+        <tr>
+          <th>1st Heading</th>
+          <th>2nd Heading</th>
+          <th>3rd Heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st Data</td>
+          <td>1st Data</td>
+          <td>1st Data</td>
+          <td rowspan="3">
+            All <br />
+            the <br />
+            Best
+          </td>
+        </tr>
+        <tr>
+          <td>2nd Data</td>
+          <td>2nd Data</td>
+          <td>2nd Data</td>
+        </tr>
+        <tr>
+          <td>3rd Data</td>
+          <td>3rd Data</td>
+          <td>3rd Data</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">All Data</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Marquee  -->
+    <!--
+    What is the HTML <marquee> Tag?
+    The <marquee> tag is used to create a scrolling effect for text or images. This tag can make content move left, right, up, or down, adding an interactive element to your web page.
+     -->
+
+    <!-- Marquee  -->
+    <marquee
+      behavior=""
+      direction="up"
+      height="400px"
+      width="300px"
+      hspace="200px"
+      vspace="200px"
+      loop="20"
+      bgcolor="green"
+      color="black"
+      scrollamount=""
+      scrolldelay="100"
+      >Kiran Kumar</marquee
+    >
+    <!-- behaviour =    scroll, alternate, slide  -->
+    <!-- scrollamount, 
+      scrolldelay, 
+      direction -->
+
+    <!-- marquee  -->
+
+    <marquee behavior="" direction="" style="color: white"
+      >This text move from left to right</marquee
+    >
+    <marquee behavior="" direction="up"
+      >This text move from bottom to top</marquee
+    >
+    <!--up means, it will go to up-->
+
+    <marquee
+      behavior="alternate"
+      direction="down"
+      width="350px"
+      height="300px"
+      style="border: 2px solid white"
+      hspace="200px"
+      vspace="20px"
+    >
+      <marquee behavior="alternate" direction="">
+        <div id="snake"></div>
+
+        <!--Sir, I want ki 3 balls esi ke andar move kare...and colide ho to alternate move kare-->
+      </marquee>
+      <!-- <marquee behavior="alternate" direction="up" width="350px"
+      height="300px" style="border: 1px solid white;">
+        <div id="snake"></div>
+      </marquee> -->
+      <!-- <marquee behavior="alternate" direction="left" width="350px"
+      height="300px">
+        <div id="snake"></div>
+      </marquee> -->
+    </marquee>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="anyone" value="Kiran Kumar" required />
+      <!-- type -- what type of value we want to enter   -->
+      <!-- name -- give name to name box  .... interconnect multiple input boxes, use in radio (same name given)-->
+      <!-- value -- default value, if not put anything  -->
+      <!-- country - india (if any form, only indian students to fill)..put by default value as -- India -->
+      <input type="text" value="India" /> <br />
+      <br />
+
+      <!-- placeholder -- we dont' want to use label, ligher color text come..when click it gone.   -->
+      <label for="name">Name</label>
+      <input type="text" name="" id="" placeholder="First Name" required />
+      <input type="text" name="" id="" placeholder="Last Name" required />
+
+      <!-- required -- mandatory to fill  -individual attribute , no value needed-->
+
+      <br />
+      <br />
+
+      <input type="number" name="" id="" required />
+
+      <input type="submit" value="Submit" />
+      <!-- readonly - that input field only to read, not edited  -->
+      <input type="text" value="India" readonly /> <br />
+      <!-- if empty as well, then also no one can write  -->
+
+      <!-- autfocus  - whenever the form is loaded, the page is loaded...as sson as the page load...I don't have to click oninput, automatically one box to focus -->
+
+      <input type="text" placeholder="First Name" autofocus />
+      <!-- only one autofus you can use...if multiple, it will focus to first one-->
+
+      <!-- disabled -  -->
+      <input type="text" placeholder="Are you employed? " />
+      <input type="text" placeholder="Enter your Salary? " disabled />
+
+      <!-- use javascript - to make this logic -- if else  -->
+      <!-- In js, we have form validation topic...that where we learn this  -->
+
+      <!-- use should enter only 20 characters  -->
+      <!-- phone number only 10 numbers 
+         use -- maxlength -->
+
+      <input type="tel" name="" id="" maxlength="10" />
+
+      <input
+        type="text"
+        name=""
+        id=""
+        maxlength="15
+         "
+      />
+      <br />
+      <br />
+
+      <!-- Attributes used in Textarea  -->
+      <textarea
+        rows="5"
+        cols="100"
+        placeholder="A brief about you? "
+      ></textarea>
+      <!--after 3 rows, it become scroolabale -->
+      <!--100 digits should come-->
+
+      <input type="number" name="" id="" maxlength="10" minlength="5" />  <!-- maxlength="10" will not work, with type="number"-->
+      <input type="tel" name="" id="" maxlength="10" />  <!--It will work-->
+
+      <input type="password" name="" id="" minlength="8" maxlength="15"  />   <!--Minimum length works for password, it will not work for type = "number"-->
+    </form>
+  </body>
+</html>
+
+<!--Attributs used in input tag 
+
+1. type. 
+2. name   - use for checkbox.
+3. value.
+
+4. placeholder.
+5. required.
+6. readonly.
+7. autofocus.
+8. disabled.
+
+9. maxlength.
+10. minlength. 
+
+
+- Element specific attributes --using thing, we can give additional information to the input tag 
+
+
+
+-->
